@@ -145,12 +145,6 @@
         drawImage(this);
       };
 
-       function drawImage(imageObj) {
-          var canvas2 = document.getElementById('secondCanvas');
-          var context = canvas.getContext('2d');
-          var x = 69;
-          var y = 50;
-
         context.drawImage(imageObj, x, y);
 
           var imageData = context.getImageData(x, y, imageObj.width, imageObj.height);
