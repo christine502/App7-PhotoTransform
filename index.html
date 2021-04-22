@@ -27,7 +27,7 @@
   blah, blah, blah,
  
   Known Issues:
-  blah, blah, blah, blah
+  second Canvas text on top of first Canvas text
 -->
 
  <head>
@@ -173,24 +173,23 @@
       var imageObj = new Image();
       imageObj.onload = function() {
         drawImage(this);
-      };
-    
-  </script>
-           
-        } <!--end of img.onload -->
+      }; 
+      
+      }//end of image.onload
         
-        img.src = reader.result;
-      } <!-- end of reader.onload -->
+     img.src = reader.result;
+      }//end of reader.onload 
       
       reader.readAsDataURL(file);
-    } <!-- end of the if statement checking that file is an image
-    else -->
-    {
-      <!-- this is what happens if the orignial file selected is not an image file
-      messageDisplayArea.innerHTML = "File not supported!" -->
-    } <!-- end of the else statement if file in NOT an image -->
-  }); <!-- end of the fileInput.addEventListener function -->
- } <!-- end of the window.onload function -->
+    } // end of the if statement checking that file is an image else
+   
+   {
+      //this is what happens if the orignial file selected is not an image file
+    
+    messageDisplayArea.innerHTML = "File not supported!"
+    } // end of the else statement if file in NOT an image 
+  }); //end of the fileInput.addEventListener function
+ } // end of the window.onload function 
  </script>
  </head>
 
