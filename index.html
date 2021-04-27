@@ -121,8 +121,6 @@
            var x = 69;
            var y = 50;
 
-        context2.drawImage(imageObj, 0, 0);
-
           var imageData2 = context2.getImageData(0, 0, 600, 500);
           var data2 = imageData2.data;
 
@@ -131,6 +129,7 @@
           data[i + 1] = 0; // red intensity to zero
         }
 
+        context2.drawImage(imageObj, 0, 0);
         // overwrite original image
         context2.putImageData(imageData, 0, 0); // specifices x and y coordinates
       }
