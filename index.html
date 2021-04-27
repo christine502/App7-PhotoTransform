@@ -123,17 +123,12 @@
 
         context2.drawImage(imageObj, 0, 0);
 
-          var imageData2 = context2.getImageData(x, y, imageObj.width, imageObj.height);
+          var imageData2 = context2.getImageData(0, 0, 600, 500);
           var data2 = imageData2.data;
 
-        for(var i = 0; i < data.length; i += 4) {
-          var brightness = 0.1 * data[i] + 0.1 * data[i + 1] + 0.8 * data[i + 2]; //iterate pixels
-          // red
-          data[i] = brightness; //calculating brightness of red pixels
-          // green
-          data[i + 1] = brightness; // calculating brightness of green pixels
-          // blue
-          data[i + 2] = brightness; // calculating brightness of blue pixels
+        for(var i = 0; n = data.length; i < n; i += 4) {
+          data[i] = 0; //green intensity to zero
+          data[i + 1] = 0; // red intensity to zero
         }
 
         // overwrite original image
