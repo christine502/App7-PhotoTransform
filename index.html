@@ -124,7 +124,7 @@
           var imageData2 = context2.getImageData(0, 0, 600, 500);
           var data2 = imageData2.data;
 
-        for(var i = 0, n = data.length; i < n; i += 4) {
+        for(var i = 0, n = data.length; i < n; i + = 4) {
           data[i] = 0; //green intensity to zero
           data[i + 1] = 0; // red intensity to zero
         }
