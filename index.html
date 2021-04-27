@@ -145,6 +145,12 @@
         drawImage(this);
       };
 
+         function drawImage(imageObj) {
+           var canvas2 = document.getElementById('secondCanvas');
+           var context2 = canvas.getContext('2d');
+           var x = 69;
+           var y = 50;
+
         context.drawImage(imageObj, x, y);
 
           var imageData = context.getImageData(x, y, imageObj.width, imageObj.height);
@@ -214,7 +220,7 @@
         var context2 = canvas.getContext("2d");
         context2.font = '20pt Calibri';
         context2.fillStyle = "black";
-        context2.fillText("Blue image will go here", 10, 20);
+        context2.fillText("Blue image will go here", 30, 40);
      </script>
        
     </div><!-- /content -->
