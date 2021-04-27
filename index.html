@@ -24,7 +24,7 @@
   http://stackoverflow.com/questions/11929099/html5-canvas-drawimage-ratio-bug-ios
   
   Brief Description of Goal of Code:
-  image analysis
+  image analysis to intensify blue pixels of image
  
   Known Issues:
   second Canvas text on top of first Canvas text
@@ -121,7 +121,7 @@
            var x = 69;
            var y = 50;
 
-        context2.drawImage(imageObj, x, y);
+        context2.drawImage(imageObj, 0, 0);
 
           var imageData2 = context2.getImageData(x, y, imageObj.width, imageObj.height);
           var data2 = imageData2.data;
