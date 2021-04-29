@@ -106,11 +106,8 @@
            var context2 = canvas2.getContext('2d'); // new context variable
            //var x = 69;
            //var y = 50;
-
-           //context2.drawImage(imageObj, x, y);
-         //var img1= new Image();
           
-          var imageData = context2.getImageData(0, 0, 600, 500);
+          var imageData = context.getImageData(0, 0, 600, 500);
           var data = imageData.data;
 
         for(var i = 0, n = data.length; i < n; i += 4) {
@@ -119,9 +116,8 @@
         }
         
           context2.putImageData(imageData, 0, 0); // overwrite original image
-          //}; 
       
-      }//end of image.onload
+      };//end of image.onload
         
      img.src = reader.result;
       }//end of reader.onload 
