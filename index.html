@@ -117,22 +117,23 @@
            var x = 69;
            var y = 50;
 
-         var img1= new Image();
-          img1=img;
-          drawImageIOSFix(context,img,0,0,img.naturalWidth,img.naturalHeight,0,0,600,500);
-          drawImageIOSFix(context2,img,0,0,img.naturalWidth,img.naturalHeight,0,0,600,500);
+         //var img1= new Image();
+          //img1=img;
+          //drawImageIOSFix(context,img,0,0,img.naturalWidth,img.naturalHeight,0,0,600,500);
+          //drawImageIOSFix(context2,img,0,0,img.naturalWidth,img.naturalHeight,0,0,600,500);
           
+          function getPixel(imgData,index) {
           var imageData = context2.getImageData(0, 0, 600, 500);
           var data = imageData.data;
 
         for(var i = 0, n = data.length; i < n; i += 4) {
-          data[i] = 0; //green intensity to zero
-          data[i + 1] = 0; // red intensity to zero
+         data[i] = 0; //green intensity to zero
+         data[i + 1] = 0; // red intensity to zero
         }
         
-         context2.putImageData(imageData, 0, 0); // overwrite original image
-         
-         }; 
+         function setPixel(imgData,index) {
+          context2.putImageData(imageData, 0, 0); // overwrite original image
+          }; 
       
       }//end of image.onload
         
