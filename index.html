@@ -108,10 +108,6 @@
           var imageY = 50;
           var imageWidth = imageObj.width;
           var imageHeight = imageObj.height;
-      }
-      var imageObj = new Image();
-      imageObj.onload = function() {
-        drawImage(this);
       };
 
         //canvas 2
@@ -132,12 +128,7 @@
           context2.putImageData(imageData, 0, 0); // specifices x and y coordinates
         context2.drawImage(imageObj, 0, 0); // calls back original image
    
-      }
-      
-      var imageObj2 = new Image();
-      imageObj2.onload = function() {
-        drawImage(this);
-      }; 
+         }; 
       
       }//end of image.onload
         
