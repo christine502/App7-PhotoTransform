@@ -105,8 +105,8 @@
            var canvas2 = document.getElementById('secondCanvas'); // second canvas id
            var context2 = canvas2.getContext("2d"); // new context variable
           
-           var imageData = context.getImageData(0, 0, 600, 500);
-           var data = imageData.data;
+           var imageData = context.getImageData(0, 0, 600, 500); // calling the original image
+           var data = imageData.data; 
 
        for(var i = 0, n = data.length; i < n; i += 4) {
            data[i] = 0; //green intensity to zero
