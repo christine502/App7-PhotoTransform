@@ -101,19 +101,16 @@
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
         //canvas 2
-         function drawImage(imageObj) {
+         //function drawImage(imageObj) {
            var canvas2 = document.getElementById('secondCanvas'); // second canvas id
            var context2 = canvas2.getContext('2d'); // new context variable
-           var x = 69;
-           var y = 50;
+           //var x = 69;
+           //var y = 50;
 
-           context2.drawImage(imageObj, x, y);
+           //context2.drawImage(imageObj, x, y);
          //var img1= new Image();
-          //img1=img;
-          //drawImageIOSFix(context,img,0,0,img.naturalWidth,img.naturalHeight,0,0,600,500);
-          //drawImageIOSFix(context2,img,0,0,img.naturalWidth,img.naturalHeight,0,0,600,500);
           
-          var imageData = context2.getImageData(0, 0, img.naturalWidth, img.naturalHeight);
+          var imageData = context2.getImageData(0, 0, 600, 500);
           var data = imageData.data;
 
         for(var i = 0, n = data.length; i < n; i += 4) {
