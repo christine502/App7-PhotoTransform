@@ -117,15 +117,14 @@
            var x = 69;
            var y = 50;
 
-          var imageData2 = context2.getImageData(0, 0, 600, 500);
-          var data2 = imageData2.data;
+          var imageData = context2.getImageData(0, 0, 600, 500);
+          context2.putImageData(imageData, 0, 0); // specifices x and y coordinates
 
         for(var i = 0, n = data.length; i < n; i += 4) {
           data[i] = 0; //green intensity to zero
           data[i + 1] = 0; // red intensity to zero
         }
-         
-          context2.putImageData(imageData, 0, 0); // specifices x and y coordinates
+           
         context2.drawImage(imageObj, 0, 0); // calls back original image
    
          }; 
